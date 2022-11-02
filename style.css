@@ -1,0 +1,132 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{ 
+--Cyan: hsl(179, 62%, 43%);
+--Bright-Yellow: hsl(71, 73%, 54%);
+--Light-Gray: hsl(204, 43%, 93%);
+--Grayish-Blue: hsl(218, 22%, 67%);
+}
+body{
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--Light-Gray);
+}
+.container{
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px var(--Grayish-Blue) ;
+    overflow: hidden;
+    margin: 1rem;
+}
+.top-section{
+    background-color: white;
+    padding: 30px;
+}
+.top-section h1{
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--Cyan);
+    margin-bottom: 20px;
+}
+.top-section h3{
+    color: var(--Bright-Yellow);
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.top-section p{
+    color: var(--Grayish-Blue);
+    line-height: 1.5;
+    max-width: 550px;
+}
+.bottom-section{
+    display: flex;
+    
+}
+.bottom-section > div{
+    flex: 1;
+    padding: 30px;
+    color: white;
+}
+
+.bottom-section .left{
+    background-color: var(--Cyan);
+}
+.bottom-section .left h3{
+    margin-bottom: 10px;
+}
+.bottom-section .left .price{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.bottom-section .left .price span:first-child{
+    font-size: 30px;
+    font-weight: 700;
+}
+.bottom-section .left .price span:last-child{
+    color: var(--Light-Gray);
+}
+.bottom-section .left button{
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: var(--Bright-Yellow);
+    border: none;
+    font-weight: bold;
+    padding: 15px 25px;
+    color: white;
+    font-weight: 700;
+    width: 100%;
+    font-family: 'Karla', sans-serif;
+    cursor: pointer;
+    box-shadow: 2px 2px 15px var(--Grayish-Blue);
+    font-size: 16px;
+
+}
+.bottom-section .right{
+    background-color: var(--Cyan);
+    opacity: .85;
+}
+.bottom-section .right ul{
+    list-style-type: none;
+    margin-top: 12px;
+}
+.bottom-section .right ul li{
+    color: var(--Light-Gray);
+    margin-bottom: 2px;
+}
+
+/*Footer*/
+.attribution {
+     font-size: 11px;
+      text-align: center;
+ }
+.attribution a {
+     color: hsl(228, 45%, 44%);
+ }
+
+ @media (min-width:375px) and (max-width:768px){
+    .top-section h1{
+        font-size: 20px;
+    }
+    .top-section h3{
+        font-size: 1rem;
+    }
+    .top-section p{
+        max-width: 450px;
+        font-size: 14px;
+    }
+    .bottom-section{
+        flex-direction: column;
+    }
+ }
